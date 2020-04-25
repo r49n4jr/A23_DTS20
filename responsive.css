@@ -1,5 +1,11 @@
 /* Untuk Tablet */
 @media all and (max-width: 1000px) {
+    .header-logo {
+       width: 160px;
+       margin-top: -40px;
+       margin-left: 5px;
+    }
+    
     .top-wrapper h1 {
         font-size: 45px;
     }
@@ -33,14 +39,43 @@
         color: white;
         font-size: 46px;
     }
+    
+    /* Awal Footer Aditya */
+    .span-heading {
+        font-size: 24px;
+    }
+
+    .flex p {
+        font-size: 18px;
+    }
+
+    /* Akhir Footer Aditya */
 }
 
 /* Untuk Smartphone */
  @media all and (max-width: 670px) {
-    /*.top-wrapper {
+    .top-wrapper h2, h3 {
         text-align: left;
         padding-left: 15px;
-    }*/
+    }
+     
+  /* Awal header Aditya */
+    .header-logo {
+        width: 150px;
+        margin-top: -35px;
+        margin-left: -5px;
+    }
+
+    .header-right {
+        display: none;
+    }
+
+    .menu-icon {
+        margin-right: 20px;
+        display: block;
+    }
+
+    /* Akhir Header Aditya */
 
     .header-title{
         font-size: 80px;
@@ -69,4 +104,39 @@
         color: white;
         font-size: 82px;
     }
+     
+        /* Awal Footer Aditya */
+    footer {
+        padding-bottom: 10px;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .span-heading {
+        font-size: 24px;
+    }
+
+    .flex p {
+        font-size: 18px;
+    }
+
+    .flex div {
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+
+    /* Akhir Footer Aditya */
 } 
+
+@media all and (max-width: 1200px) {
+    .header-right {
+        margin-right: 0px;
+    }
+
+    .header-left {
+        margin-left: 15px;
+    }
+}
