@@ -1,11 +1,14 @@
 /* Untuk Tablet */
 @media all and (max-width: 1000px) {
+/* Awal Header Aditya */
     .header-logo {
        width: 160px;
        margin-top: -40px;
        margin-left: 5px;
     }
+/* Akhir Header Aditya */
     
+/* Awal Top Wrapper */
     .top-wrapper h1 {
         font-size: 45px;
     }
@@ -17,30 +20,38 @@
     .top-wrapper h3 {
         font-size: 15px;
     }
-
+/* Akhir Top Wrapper */
+    
+/* Awal Portofolio */
     .header-title{
         font-size: 60px;
         margin-bottom: 80px;
     }
     
-    .portofolio-item{
-        width: 50%;
-        padding: 0 20px;
-        margin-bottom: 50px;
+    .portofolio h1 {
+        font-size: 60px;
+        margin-bottom: 70px;
     }
     
-    .portofolio-icon{
+    .portofolio-item {
+        width: 50%;
+        padding: 0 20px;
+        margin-bottom: 30px;
+    }
+    
+    .portofolio-icon {
         width: 100%;
         border-radius: 1rem;
     }
+/* Akhir Portofolio */
 
-    .portofolio-item-hover p{
-        padding-top: 100px;
-        color: white;
-        font-size: 46px;
+/* Awal About Wrapper */
+   .heading h1 {
+     font-size: 63px;
     }
+/* Akhir About Wrapper */
     
-    /* Awal Footer Aditya */
+/* Awal Footer Aditya */
     .span-heading {
         font-size: 24px;
     }
@@ -48,18 +59,47 @@
     .flex p {
         font-size: 18px;
     }
+    
+    .flex div {
+        width: 50%;
+    }
 
-    /* Akhir Footer Aditya */
+    .footer-right {
+        padding-top: 50px;
+
+/* Akhir Footer Aditya */
+        
+/* Awal Social Button Aditya */
+    .mids {
+        margin-top: 10px;
+    }
+/* Akhir Social Button Aditya */
+        
 }
 
 /* Untuk Smartphone */
  @media all and (max-width: 670px) {
-    .top-wrapper h2, h3 {
-        text-align: left;
-        padding-left: 15px;
+/* Awal Top Wrapper */
+    .top-wrapper h1 {
+        font-size: 35px;
     }
+
+    .top-wrapper h2 {
+        font-size: 17px;
+    }
+
+    .top-wrapper h3 {
+        font-size: 15px;
+        margin-bottom: -40px;
+    }
+
+    .top-wrapper img {
+        height: 150px;
+        width: 380px;
+    }
+/* Akhir Top Wrapper */
      
-  /* Awal header Aditya */
+/* Awal header Aditya */
     .header-logo {
         width: 150px;
         margin-top: -35px;
@@ -74,38 +114,43 @@
         margin-right: 20px;
         display: block;
     }
+/* Akhir Header Aditya */
 
-    /* Akhir Header Aditya */
-
-    .header-title{
+/* Awal Portofolio */
+    .header-title {
         font-size: 80px;
         margin-bottom: 100px;
     }
+     
+    .portofolio h1 {
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
     
-    .portofolio-icon{
+    .portofolio-icon {
         width: 100%;
         border-radius: 1.5rem;
     }
 
-    .portofolio-list{
+    .portofolio-list {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        padding-bottom: 40px;
     }
 
-    .portofolio-item{
+    .portofolio-item {
         width: 100%;
-        padding: 0 40px;
-        margin-bottom: 100px;
+        padding: 0 90px;
+        margin-bottom: 50px;
     }
 
-    .portofolio-item-hover p{
-        padding-top: 250px;
-        color: white;
-        font-size: 82px;
+    .portofolio-item-hover p {
+        font-size: 40px;
     }
+ /* Akhir Portofolio */
      
-        /* Awal Footer Aditya */
+ /* Awal Footer Aditya */
     footer {
         padding-bottom: 10px;
     }
@@ -127,8 +172,60 @@
         margin: 0 auto;
         padding-bottom: 50px;
     }
+/* Akhir Footer Aditya */
+     
+/* Awal About Wrapper */
+    .heading h1 {
+        font-size: 55px;
+    }
 
-    /* Akhir Footer Aditya */
+    .desc {
+        width: 100%;
+    }
+
+    .txt-contents {
+        padding-top: 10px;
+    }
+/* Akhir About Wrapper */
+
+/* Awal Social Button */
+    .mids {
+        flex-direction: column;
+    }
+
+    .mids a {
+        margin: 20px auto -10px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 18px;
+    }
+
+    .footer-center {
+        height: 280px;
+    }
+/* Akhir Social Button */
+
+/* Awal Form Wrapper */
+    .form-wrapper {
+        margin-top: 50px;
+    }
+
+    input {
+        font-size: 22px;
+    }
+
+    textarea {
+        font-size: 22px;
+        max-height: 80px;
+        min-height: 80px;
+    }
+
+    .btn-sub {
+        padding: 12px 30px;
+    }
+
+/* Akhir Form Wrapper */
+     
 } 
 
 @media all and (max-width: 1200px) {
