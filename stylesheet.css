@@ -17,7 +17,7 @@
     margin: 0 auto;
     padding: 0 5px;
   }
-  
+
 /* Awal Header Aditya*/
   header {
   height: 75px;
@@ -76,26 +76,18 @@
 .menu-icon:hover {
   background-color: rgba(0, 139, 139, 0.7);
   color: rgb(231, 223, 223);
+  cursor: pointer;
 }
-
+/* Smartphone Swap Menu Icon */
 /* Akhir Header Aditya */
 
-  .header-title{
-    font-family: "Lato";
-    font-size: 50px;
-    color: #2c3e50;
-    font-weight: bold;
-    margin-bottom: 50px;
-  }
-
-/* Top Wrapper */
+/* Awal Top Wrapper */
   .top-wrapper {
     padding: 150px 0;
     background-color: darkcyan;
     background-size: cover;
     color: white;
     text-align: center;
-    
   }
 
   .top-wrapper h1 {
@@ -107,7 +99,7 @@
   .top-wrapper h2 {
       font-family: serif;
       font-size: 25px;
-      margin-bottom: -20px;
+      margin-bottom: -10px;
   }
   
   .top-wrapper h3 {
@@ -118,27 +110,37 @@
 
 
   .top-wrapper img {
-      height: 400px;
-      width: 170px;
+      height: 170px;
+      width: 400px;
   }
+/* Akhir Top Wrapper */
 
-  /*portofolio*/
+/*Awal Portofolio*/
+  .header-title{
+    font-family: "Lato";
+    font-size: 50px;
+    color: #2c3e50;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
 			
-  .portofolio{
+  .portofolio h1 {
     text-align: center;
     padding-top: 20px;
-    padding-bottom: 50px;
+    font-size: 70px;
   }
-  .portofolio-list{
+
+  .portofolio-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-bottom: 50px;
   }
   
-  .portofolio-item{
-    width: 33.33%;
+  .portofolio-item {
+    width: 33%;
     padding: 0 20px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
   }
   
   .portfolio-select{
@@ -156,12 +158,15 @@
     border-radius: 0.5rem;
     opacity: 0;
     transition: all 0.5s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    display: flex;
   }
 
-  .portofolio-item-hover p{
-    padding-top: 80px;
+  .portofolio-item-hover p {
+    max-width: 100%;
     color: white;
-    font-size: 24px;
+    font-size: 35px;
   }
 
   .portofolio-icon{
@@ -170,42 +175,41 @@
     border-radius: 0.5rem;
   }
 
-  .portofolio-item:hover .portfolio-select .portofolio-item-hover{
+  .portofolio-item:hover .portfolio-select .portofolio-item-hover {
     opacity: 1;
   }
-    
-/* portofolio */
-  
-.about-wrapper {
-  height: 540px;
-  padding-bottom: 80px;
-  background-color: rgb(229, 208, 190);
+/* Akhir Portofolio */
 
-  /* background-color: #09317ce1; */
+/*Awal About Wrapper*/
+.about-wrapper {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  background-color: rgb(229, 208, 190);
   text-align: center;
 }
 
 .heading {
-  padding-top: 10px;
   color: #3b3a3b;
 }
 
 .heading h1 {
   font-family: 'Roboto Slab';
-  font-size: 60px;
+  font-size: 70px;
   letter-spacing: 7px;
   margin-bottom: 5px;
   margin-top: 45px;
 }
 
-.desc {
-  float: left;
-  width: 50%;
+.mid {
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 30px;
 }
 
-.desc-icon {
-  position: relative;
+.desc {
+  flex: auto;
+  width: 50%;
+  padding-bottom: 30px;
 }
 
 .desc-icon .img1 {
@@ -214,14 +218,14 @@
 }
 
 .desc-icon .img2 {
-  height: 120px;
+  height: 130px;
   width: 155px;
-  margin-bottom: 10px;
 }
 
 .txt-contents {
-  width: 80%;
-  display: inline-block;
+  letter-spacing: 1px;
+  line-height: 25px;
+  margin: 0 30px;
   margin-top: 20px;
   font-size: 15px;
   color: #7d7a7e;
@@ -241,18 +245,37 @@
   height: 0.25rem;
   background-color: #7d7a7e;
   border-radius: 1rem;
-  border-color: #7d7a7e !important;
+  border-color: #7d7a7e;
 }
 
 .divider-custom .divider-custom-icon {
-  color: #535253 !important;
+  color: #535253;
   font-size: 2rem;
   margin: 10px 10px;
 }
+/*Akhir About Wrapper*/
+
+/* Awal Contact Wrapper */
+.contact-wrapper {
+  background-color: white;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.heading h1 {
+  font-family: 'Roboto Slab';
+  font-size: 70px;
+  letter-spacing: 7px;
+  margin-bottom: 5px;
+  margin-top: 45px;
+}
+
+/* Akhir Contact Wrapper */
 
 /* Awal Footer Aditya */
 footer {
-  border-top: 1px solid white;
+  border-top: 1px solid wheat;
   border-bottom: 2px solid wheat;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -311,3 +334,97 @@ small {
 }
 
 /* Akhir Copright Aditya */
+
+/* Awal Social Button */
+
+.mids {
+  display: flex;
+  margin: 20px auto;
+  min-width: 250px;
+}
+
+.mids a {
+  border: 2px solid white;
+  border-radius: 100%;
+  margin: 5px auto;
+  max-height: 60px;
+  max-width: 50px;
+  height: 60px;
+  width: 50px;
+  line-height: 60px;
+  font-size: 25px;
+  color: white;
+  transition: all 0.5s;
+}
+
+.mids a:hover {
+  background-color: white;
+  color: rgb(50, 52, 53);
+  border: 2px solid black;
+}
+
+/* Akhir Social Button */
+
+/* Awal Form Wrapper */
+.form-wrapper {
+  margin-top: 100px;
+}
+
+.contact-item {
+  display: flex;
+}
+
+input {
+  width: 80%;
+  font-size: 26px;
+  color: rgba(50, 52, 53, 0.8);
+  font-family: Helvetica, sans-serif;
+  padding-bottom: 20px;
+  border: none;
+  outline: none;
+}
+
+textarea {
+  max-width: 80%;
+  max-height: 100px;
+  min-height: 100px;
+  min-width: 80%;
+  width: 80%;
+  color: rgba(50, 52, 53, 0.8);
+  font-size: 26px;
+  font-family: Helvetica, sans-serif;
+  border: none;
+  outline: none;
+}
+
+hr {
+  width: 80%;
+  border: 1px solid rgba(50, 52, 53, 0.5);
+}
+
+.btn-sub {
+  display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 80px;
+  background-color: rgba(14, 112, 112, 0.8);
+  padding: 15px 40px;
+  color: white;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 7px rgb(14, 112, 112);
+}
+
+.btn-sub:hover {
+  opacity: 0.75;
+  color: black;
+  transition: ease-out 0.5s;
+}
+
+.btn-sub:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+/* Awal Form Wrapper */
